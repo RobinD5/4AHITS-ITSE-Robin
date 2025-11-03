@@ -54,3 +54,18 @@ nmap -sn 192.168.21.50 // -sn scannt nicht die ports nur den Host
 <br>
 
 ![1-30 Scan](6.png)
+
+<br>
+
+# Übung (nmap port scan)
+
+Nmap scannt standardmäßig die 1.000 häufigsten TCP-Ports. Auf Metasploitable findet man z.B.:
+
+- Port 21 (FTP – vsftpd 2.3.4)
+- Port 22 (SSH – OpenSSH 4.7p1)
+- Port 23 (Telnet)
+- Port 80 (HTTP – Apache 2.2.8)
+- Port 3306 (MySQL)
+- Port 5432 (PostgreSQL)
+
+
