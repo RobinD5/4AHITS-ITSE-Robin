@@ -76,6 +76,12 @@ Nmap scannt standardmäßig die 1.000 häufigsten TCP-Ports. Auf Metasploitable 
 - ```-O``` OS-Erkennung (Fingerprinting)
 - ```-A``` Aggresiver Scan (kombiniert -o,-sv,-sc,--traceroute)
 
+Beispiel:
+
 ![all Portscan](7.png)
+
+<br>
+
+
 
 
