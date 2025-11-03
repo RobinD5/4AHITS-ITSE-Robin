@@ -68,4 +68,14 @@ Nmap scannt standardmäßig die 1.000 häufigsten TCP-Ports. Auf Metasploitable 
 - Port 3306 (MySQL)
 - Port 5432 (PostgreSQL)
 
+### Erweiterte Scan-Optionen
+
+- ```-p-``` Scan aller 65.535 Ports (0-1023 = Well Known Ports)
+- ```-Pn``` Überspringt Ping-Scan (gut bei Firewalls)
+- ```-sV``` Service- und Versions- Erkennung
+- ```-O``` OS-Erkennung (Fingerprinting)
+- ```-A``` Aggresiver Scan (kombiniert -o,-sv,-sc,--traceroute)
+
+![all Portscan](7.png)
+
 
