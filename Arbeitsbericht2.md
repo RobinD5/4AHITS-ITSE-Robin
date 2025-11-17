@@ -3,40 +3,63 @@
 ## 4AHITS Robin Dicker 17.11.2025
 ------
 
-# Übung (nmap cheat sheet)
+<br>
 
-## Nmap Cheat Sheet
+# Nmap Cheat Sheet
+<br>
 
-## Grundlegende Scans
+### Grundlegende Scans
 - `nmap <IP>` -> Standard-Scan  
 - `nmap -A <IP>`-> Aggressiver Scan (OS, Version, Skripte)  
 - `nmap -Pn <IP>` -> Host-Erkennung überspringen  
 
-## Ports
+### Ports
 - `nmap -p 80 <IP>` -> Nur Port 80  
 - `nmap -p- <IP>` -> Alle Ports  
 - `nmap -F <IP>` -> Schneller Scan (häufige Ports)  
 
-## Scan-Techniken
+### Scan-Techniken
 - `nmap -sS <IP>` -> SYN-Scan (Stealth)  
 - `nmap -sT <IP>` -> TCP Connect  
 - `nmap -sU <IP>` -> UDP-Scan  
 - `nmap -sV <IP>` -> Service-/Versions-Erkennung  
 - `nmap -O <IP>` -> OS-Erkennung  
 
-## Timing
+### Timing
 - `nmap -T4 <IP>` -> Schnell  
 - `nmap -T5 <IP>` -> Sehr schnell (riskant)  
 
-## Output
+### Output
 - `nmap -oN scan.txt <IP>` -> Normal Output  
 - `nmap -oA results <IP>` -> Alle Formate  
 
-## NSE (Skripte)
+### NSE (Skripte)
 - `nmap --script=default <IP>` -> Standard-Skripte  
 - `nmap --script=vuln <IP>` -> Schwachstellen-Scan  
 
----
-Tipp: Kombiniere Optionen für detaillierte Ergebnisse, z. B.:  
-```bash
+### Kombiniere Commands für spezifischere Ergebnisse
 nmap -sS -sV -O -p- -T4 <IP>
+
+<br>
+<br>
+
+# Vulnerability Scanning
+
+<br>
+
+## Übung (Optionen)
+
+Analysiere die Bedeutung der folgenden Optionen:
+
+`$ nmap -Pn -sS -sV -sC -oN nmap_default.txt 10.10.92.153`
+
+`-Pn` -> Host Erkennung überspringen, Nmap geht davon aus, dass der Host up ist
+`-sS` -> Nmap verwendet nur SYN-Packete und baut keine vollständige TCP-Verbindung auf
+`-sV` -> Erkennt die Version des Systems das läuft
+`-sC` -> Führt die Standard-Skripte der NSE aus, diese prüfen z.B.: Banner,Standard-Infos,...
+`-oN` -> Speichert die Ausgabe in Textformat in die Datei nmap_default.txt, 10.10.92.153->Ziel-IP
+
+
+
+
+
