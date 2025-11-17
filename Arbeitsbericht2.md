@@ -51,7 +51,7 @@ nmap -sS -sV -O -p- -T4 <IP>
 
 Analysiere die Bedeutung der folgenden Optionen:
 
-`$ nmap -Pn -sS -sV -sC -oN nmap_default.txt 10.10.92.153`
+`$ nmap -Pn -sS -sV -sC -oN nmap_default.txt 192.168.21.50`
 
 `-Pn` -> Host Erkennung überspringen, Nmap geht davon aus, dass der Host up ist
 `-sS` -> Nmap verwendet nur SYN-Packete und baut keine vollständige TCP-Verbindung auf
@@ -62,11 +62,19 @@ Analysiere die Bedeutung der folgenden Optionen:
 <br>
 
 ![Scan](1.2.png)
-![Scan2](2.2.png)
+![Scan2](1.1.png)
 
 <br>
 
 ## Übung (vulnerability scan)
+
+nmap verfügt über eine Erweiterung über die Lua Scripts ausgeführt werden können. Die installierten Lua Scripts befinden sich im Directory /usr/share/nmap/scripts.
+
+![Scripts in Kali](1.3.png)
+
+### Übung 1:
+
+`nmap -sC -F 192.168.21.50 -oN metasploitable_sC_F.txt`
 
 
 
