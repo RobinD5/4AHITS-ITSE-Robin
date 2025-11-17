@@ -100,6 +100,16 @@ nmap verfügt über eine Erweiterung über die Lua Scripts ausgeführt werden k�
 ![Scan2.1](1.6.png)
 ![Scan2.2](1.7.png)
 
+<br>
+
+### Übung 3:
+
+Finde ein weiters Skript das sinnvolle Infos findet:
+`ftp-vsftpd-backdoor` prüft ob der vsftpd 2.3.5 FTP-Server läuft der eine bekannte Backdoor enthält.
+
+![Scan3](1.8.png)
+
+<br>
 
 
 
