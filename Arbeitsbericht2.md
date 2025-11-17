@@ -5,7 +5,7 @@
 
 <br>
 
-# Nmap Cheat Sheet
+# [Nmap Cheat Sheet](https://nmap.org/nsedoc/scripts/)
 <br>
 
 ### Grundlegende Scans
@@ -39,6 +39,8 @@
 
 ### Kombiniere Commands f체r spezifischere Ergebnisse
 nmap -sS -sV -O -p- -T4 <IP>
+
+
 
 <br>
 <br>
@@ -89,6 +91,14 @@ nmap verf체gt 체ber eine Erweiterung 체ber die Lua Scripts ausgef체hrt werden k�
 
 `nmap --script=http-title,mysql-info,banner,ftp-anon,smb-os-discovery -p- 192.168.21.50 -oN metasploitable_scripts.txt`
 
+`http-title` -> Liest den Titel von HTTP-Seiten
+`mysql-info` -> Infos 체ber MySQL-Server
+`banner` -> Liest Banner von Diensten aus
+`ftp-anon` -> Pr체ft auf anonymen FTP-Zugang
+`smb-os-discovery` -> Erkennt OS 체ber SMB
+
+![Scan2.1](1.6.png)
+![Scan2.2](1.7.png)
 
 
 
