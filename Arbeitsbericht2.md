@@ -59,7 +59,14 @@ Analysiere die Bedeutung der folgenden Optionen:
 `-sC` -> Führt die Standard-Skripte der NSE aus, diese prüfen z.B.: Banner,Standard-Infos,...
 `-oN` -> Speichert die Ausgabe in Textformat in die Datei nmap_default.txt, 10.10.92.153->Ziel-IP
 
-![Scan](1.1.png)
+<br>
+
+![Scan](1.2.png)
+![Scan2](2.2.png)
+
+<br>
+
+## Übung (vulnerability scan)
 
 
 
