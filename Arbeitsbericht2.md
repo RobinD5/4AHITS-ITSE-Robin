@@ -72,9 +72,25 @@ nmap verfügt über eine Erweiterung über die Lua Scripts ausgeführt werden k�
 
 ![Scripts in Kali](1.3.png)
 
+<br>
+
 ### Übung 1:
 
 `nmap -sC -F 192.168.21.50 -oN metasploitable_sC_F.txt`
+
+![Scan1.1](1.4.png)
+![Scan1.2](1.5.png)
+
+<br>
+
+### Übung 2:
+
+5 Skripte ausführen
+
+`nmap --script=http-title,mysql-info,banner,ftp-anon,smb-os-discovery -p- 192.168.21.50 -oN metasploitable_scripts.txt`
+
+
+
 
 
 
