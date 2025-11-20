@@ -40,8 +40,6 @@
 ### Kombiniere Commands für spezifischere Ergebnisse
 nmap -sS -sV -O -p- -T4 <IP>
 
-
-
 <br>
 <br>
 
