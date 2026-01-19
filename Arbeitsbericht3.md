@@ -47,6 +47,7 @@ setg - setzt globable Variable z.b.: setg LHOST <ip>
 ### msfvenom
 
 msfvenom kombiniert die früheren Tools msfpayload und msfencode.
+<br>
 
 -p – Payload auswählen <br>
 -f – Ausgabeformat (exe, elf, raw, php, …) <br>
@@ -61,6 +62,7 @@ msfvenom kombiniert die früheren Tools msfpayload und msfencode.
 ### Meterpreter
 
 Meterpreter ist ein post‑exploitation Framework, das über eine Metasploit‑Payload geladen wird.
+<br>
 
 sysinfo – Systeminformationen <br>
 getuid – aktuellen Benutzer anzeigen <br>
@@ -71,5 +73,43 @@ download <file> – Datei herunterladen <br>
 shell – normale System-Shell öffnen <br>
 
  <br>
+
+ ## Übung (nmap FTP scan)
+
+nmap scan mit:
+<br>
+nmap --script=vuln -p 21 <ip> 
+<br>
+
+![nmapvuln](3.3.png)
+<br>
+
+- "vsftpd 2.3.4 backdoor vulnerability" gefunden
+<br>
+
+CVE‑2011‑2523 – vsFTPd 2.3.4 Backdoor:
+<br>
+Ein Angreifer kann sich mit einem Benutzername anmelden, der ein :) enthält.
+<br>
+Dadurch öffnet der Server eine Backdoor‑Shell auf Port 6200.
+<br>
+Diese Backdoor wurde absichtlich in die veröffentlichte Version eingebaut
+<br>
+
+Recherchiere warum diese Skripte als intrusive bezeichnet werden, warum werden diese bei -sC oder -A nicht ausgeführt?
+<br>
+Sie sind intrusive weil sie:
+- Senden speziell präparierte Pakete
+- Versuchen Exploits auszulösen
+- Testen Login‑Versuche
+- Provozieren Fehlerzustände
+- Können Dienste zum Absturz bringen
+  <br>
+
+
+## Übung (msf FTP Version herausfinden)
+
+
+
 
 
