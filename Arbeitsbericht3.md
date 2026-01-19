@@ -109,6 +109,24 @@ Sie sind intrusive weil sie:
 
 ## Übung (msf FTP Version herausfinden)
 
+- search type:auxiliary scanner ftp -> auxiliary/scanner/ftp/ftp_version
+
+- use auxiliary/scanner/ftp/ftp_version
+
+- set RHOSTS <ip> -> run
+
+![ftp](3.4.png)
+
+- "Banner: 220 (vsFTPd 2.3.4)" bestätigt die Version 2.3.4
+
+<br>
+
+## Übung (msf vsftpd exploit)
+
+![in shell](3.5.png)
+
+![youhavebeenhacked](3.6.png)
+
 
 
 
